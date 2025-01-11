@@ -4,7 +4,7 @@
 // });
 
 const prodotti = process.argv.slice(2);
-console.log('La mia lista della spesa:')
+console.log('La mia lista della spesa:\n')
 prodotti.forEach((element, index) => {
     console.log(`${index+1} - ${element}`);
 });
