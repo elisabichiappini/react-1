@@ -4,7 +4,7 @@
   "description": "Pacchetto di test per classe",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "node test.js",
     "sayhi": "node sayHy.js",
     "dev": "nodemon server.js"
   },
