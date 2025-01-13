@@ -1,7 +1,11 @@
 /*creare un server*/
+//importo modulo
+const dotenv = require("dotenv");
+dotenv.config();
 //importo un modulo
 const http = require("http");
-
+const port = process.env.PORT || 8080;
+const host = process.env.HOST || 'localhost';
 //istanzio un server
 const server = http.createServer((req, res) => {
     console.log(`${req.method} | ${req.url} effettuata`);
@@ -9,8 +13,8 @@ const server = http.createServer((req, res) => {
     res.end("<h1>Hello world</h1>");
 });
 //quando è pronto dico accenditi/resta in ascolto
-server.listen(8888, 'localhost', () => {
-    console.log('Server avviato su http://localhost:8080');
+server.listen(port, host, () => {
+    console.log(`Server avviato su http:/${host}:${port}`);
 });
 
 /*
