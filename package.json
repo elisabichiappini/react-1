@@ -6,8 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "sayhi": "node sayHy.js",
-    "dev": "node server.js",
-    "start": "nodemon server.js"
+    "dev": "node server.js"
   },
   "keywords": [
     "Hyur"
