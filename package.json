@@ -7,11 +7,14 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "sayhi": "node sayHy.js",
     "dev": "node server.js",
-    "start": "node server.js"
+    "start": "nodemon server.js"
   },
   "keywords": [
     "Hyur"
   ],
   "author": "Hyur",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "nodemon": "^3.1.9"
+  }
 }
